@@ -58,8 +58,9 @@ Plug 'skywind3000/asyncrun.vim'
 " Initialize plugin system
 call plug#end()
 
-" Toggle NERDTree
-map <C-n> :NERDTreeToggle<CR>
+" NERDTree
+nmap <C-n> :NERDTreeToggle<CR>
+nmap <C-m> :NERDTreeFind<CR>
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
