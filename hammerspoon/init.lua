@@ -9,10 +9,10 @@ hs.hotkey.bind({"alt"}, "C", function() hs.eventtap.keyStrokes("console.log('==>
 workLayout = {
   {"Slack", nil, "Color LCD", hs.layout.maximized, nil, nil},
   {"iTerm2", nil, "Color LCD", hs.layout.maximized, nil, nil},
-  {"Google Chrome", nil, "Thunderbolt Display", hs.layout.left50, nil, nil},
-  {"Firefox", nil, "Thunderbolt Display", hs.layout.left50, nil, nil},
-  {"Safari", nil, "Thunderbolt Display", hs.layout.left50, nil, nil},
-  {"Atom", nil, "Thunderbolt Display", hs.layout.right50, nil, nil},
+  {"Google Chrome", nil, "LG Ultra HD", hs.layout.left50, nil, nil},
+  {"Firefox", nil, "LG Ultra HD", hs.layout.left50, nil, nil},
+  {"Safari", nil, "LG Ultra HD", hs.layout.left50, nil, nil},
+  {"Atom", nil, "LG Ultra HD", hs.layout.right50, nil, nil},
 }
 
 -- Window Control
