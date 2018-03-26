@@ -127,6 +127,9 @@ let g:user_emmet_settings = {
 let g:ale_sign_error = '●' " Less aggressive than the default '>>'
 let g:ale_sign_warning = '.'
 let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\}
 
 " JS Auto Fix
 autocmd BufWritePost *.js AsyncRun -post=checktime standard --fix %
