@@ -60,7 +60,7 @@ call plug#end()
 
 " NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
-nmap <C-m> :NERDTreeFind<CR>
+nmap <C-b> :NERDTreeFind<CR>
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
