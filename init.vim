@@ -153,7 +153,7 @@ let g:ale_linters = {
 \}
 
 " JS Auto Fix
-autocmd BufWritePost *.js AsyncRun -post=checktime standard --fix %
+autocmd BufWritePost *.js AsyncRun -post=checktime npx eslint --fix %
 
 " Vim Move
 let g:move_key_modifier = 'C'
