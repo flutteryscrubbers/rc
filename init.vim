@@ -6,6 +6,9 @@ call plug#begin('~/.vim/plugged')
 " NERDTree - Navigation
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
+" NERDCommenter
+Plug 'scrooloose/nerdcommenter'
+
 " Auto-Pairs - Auto Parens
 Plug 'jiangmiao/auto-pairs'
 
@@ -15,10 +18,13 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Vim Fugitive - Git Contorls
 Plug 'tpope/vim-fugitive'
 
-" Lightline - Status Line REPLACED BY vim-airline
-" Plug 'itchyny/lightline.vim'
+" Vim Surround - Surround text
+Plug 'tpope/vim-surround'
+
+" Airline - Status Line
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
 " CtrlP - Fuzzy Finder
 Plug 'ctrlpvim/ctrlp.vim'
 
@@ -58,9 +64,24 @@ Plug 'skywind3000/asyncrun.vim'
 " Initialize plugin system
 call plug#end()
 
+" Leader Setting => Space
+let mapleader=" "
+
 " NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
 nmap <C-b> :NERDTreeFind<CR>
+
+" NERDCommenter
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
