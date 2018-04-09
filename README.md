@@ -16,3 +16,8 @@ This config also works well with the custom theme Powerlevel9K. This can be foun
 
 A good resource for fonts is: [https://github.com/powerline/fonts](https://github.com/powerline/fonts)
 
+### Fonts
+
+I use FiraCode for my font.
+
+It can be found at: [https://github.com/tonsky/FiraCode](https://github.com/tonsky/FiraCode)
