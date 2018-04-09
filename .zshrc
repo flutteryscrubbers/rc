@@ -100,3 +100,6 @@ test -e "${HOME}/.localrc" && source "${HOME}/.localrc"
 # iTerm2 Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+alias vi="nvim"
+alias vim="nvim"
+
