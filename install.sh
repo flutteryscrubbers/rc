@@ -9,5 +9,8 @@ brew install neovim
 # Copy NVim Config
 cp ./init.vim ~/.config/nvim/
 
+# Copy ZSH RC
+cp ./zshrc ~
+
 # Install Python Dependency
 pip3 install neovim
